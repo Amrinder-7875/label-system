@@ -36,7 +36,7 @@ const CornerAccents = () => (
   </>
 );
 
-const AUTH_BASE_URL = "http://localhost:8000/api/auth";
+const AUTH_BASE_URL = "https://label-system-d8af.onrender.com/api/auth";
 const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID;
 const ACCESS_MODES = {
   member: "member",

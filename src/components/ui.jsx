@@ -79,7 +79,7 @@ export const useApi = (endpoint, refreshKey) => {
       try {
         const token = localStorage.getItem("token");
         if (!token) throw new Error("Not authenticated.");
-        const res = await fetch(`http://localhost:8000${endpoint}`, {
+        const res = await fetch(`https://label-system-d8af.onrender.com${endpoint}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         const json = await res.json();

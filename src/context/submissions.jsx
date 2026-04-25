@@ -5,7 +5,7 @@ import {
   readStatusOverrides,
 } from "../utils/submissionStatusOverrides";
 
-const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL = "https://label-system-d8af.onrender.com";
 
 const SubmissionsContext = createContext(null);
 
