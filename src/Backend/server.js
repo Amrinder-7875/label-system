@@ -2,6 +2,8 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from "url";
 import authRoutes from "./routes/auth.js";
 import adminRoutes from "./routes/admin.js";
 import trackRoutes from "./routes/track.js";
@@ -15,6 +17,8 @@ import scheduleRoutes from "./routes/schedule.js";
 dotenv.config();
 
 const PORT = process.env.PORT || 8000;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 
@@ -32,14 +36,15 @@ app.use("/api/schedule", scheduleRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/admin", adminRoutes);
 
-app.get("/", (req, res) => {
-  res.send("API is running...");
+app.use(express.static(path.join(__dirname, "../../dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../../dist", "index.html"));
 });
 
 app.use((err, req, res, next) => {
   console.error("Server Error:", err.stack);
   res.status(500).json({ message: "Something went wrong" });
-});
 
 mongoose.connect(process.env.MONGO_URI)
 .then(() => {
