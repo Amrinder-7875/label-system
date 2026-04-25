@@ -5,7 +5,7 @@ import {
   readStatusOverrides,
 } from "../utils/submissionStatusOverrides";
 
-const API_BASE_URL = "https://label-system-d8af.onrender.com";
+const API_BASE_URL = import.meta.env.VITE_API_URL?.replace(/\/api$/, "") || "https://label-system-d8af.onrender.com";
 
 const SubmissionsContext = createContext(null);
 

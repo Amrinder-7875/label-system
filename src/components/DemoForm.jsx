@@ -11,7 +11,7 @@ const FIELDS = [
 
 const inputClass =
   'w-full bg-[#141414] border border-[#2a2a2a] text-[#f0ede8] font-mono text-[13px] px-4 py-3 outline-none transition-colors duration-200 placeholder:text-[#2a2a2a] focus:border-[#e63329]'
-const API_BASE_URL = 'https://label-system-d8af.onrender.com/api'
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://label-system-d8af.onrender.com/api'
 const statusLabelMap = {
   pending: 'Pending Review',
   in_review: 'In Review',
@@ -47,7 +47,7 @@ export default function DemoForm() {
     setSubmitting(true)
 
     try {
-      const res = await fetch(`${API_BASE_URL}/api/submissions`, {
+      const res = await fetch(`${API_BASE_URL}/submissions`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -90,7 +90,7 @@ export default function DemoForm() {
 
     try {
       const normalizedTrackingId = trackingInput.trim().toUpperCase()
-      const res = await fetch(`${API_BASE_URL}/api/submissions/track/${normalizedTrackingId}`)
+      const res = await fetch(`${API_BASE_URL}/submissions/track/${normalizedTrackingId}`)
       const data = await res.json()
 
       if (!res.ok) {
