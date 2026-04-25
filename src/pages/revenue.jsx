@@ -50,7 +50,7 @@ export default function Revenue() {
 
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:8000/api/revenue", {
+      const res = await fetch("https://label-system-d8af.onrender.com/api/revenue", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
