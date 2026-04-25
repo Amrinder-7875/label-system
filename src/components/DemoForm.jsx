@@ -11,7 +11,7 @@ const FIELDS = [
 
 const inputClass =
   'w-full bg-[#141414] border border-[#2a2a2a] text-[#f0ede8] font-mono text-[13px] px-4 py-3 outline-none transition-colors duration-200 placeholder:text-[#2a2a2a] focus:border-[#e63329]'
-const API_BASE_URL = 'http://localhost:8000'
+const API_BASE_URL = 'https://label-system-d8af.onrender.com/api'
 const statusLabelMap = {
   pending: 'Pending Review',
   in_review: 'In Review',
