@@ -36,7 +36,7 @@ export default function Tracks() {
   const handleDelete = async (id) => {
     try {
       const token = localStorage.getItem("token");
-      await fetch(`http://localhost:8000/api/tracks/${id}`, {
+      await fetch(`https://label-system-d8af.onrender.com/api/tracks/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

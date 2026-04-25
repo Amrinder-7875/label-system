@@ -47,7 +47,7 @@ export default function Releases() {
 
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:8000/api/releases", {
+      const res = await fetch("https://label-system-d8af.onrender.com/api/releases", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

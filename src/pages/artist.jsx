@@ -59,7 +59,7 @@ export default function Artists() {
 
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("http://localhost:8000/api/artists", {
+      const res = await fetch("https://label-system-d8af.onrender.com/api/artists", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
