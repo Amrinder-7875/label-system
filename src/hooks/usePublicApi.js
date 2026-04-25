@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_BASE_URL = "https://label-system-d8af.onrender.com";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "https://label-system-d8af.onrender.com/api";
 
 export function usePublicApi(endpoint) {
   const [data, setData] = useState(null);
@@ -15,7 +15,7 @@ export function usePublicApi(endpoint) {
         setLoading(true);
         setError("");
 
-        const res = await fetch(`${API_BASE_URL}${endpoint}`);
+        const res = await fetch(`${API_BASE_URL}${endpoint.startsWith("/") ? endpoint : `/${endpoint}`}`);
         const json = await res.json();
 
         if (!res.ok) {
