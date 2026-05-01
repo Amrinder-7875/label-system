@@ -40,7 +40,7 @@ music-label-management/ │ ├── frontend/         # React frontend │   �
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
-bash git clone https://github.com/your-username/music-label-management.git cd music-label-management 
+bash git clone https://github.com/Amrinder-7875/label-system/blob/main/ 
 
 ---
 
