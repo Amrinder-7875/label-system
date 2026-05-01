@@ -1,8 +1,9 @@
 # 🎵 Music Label Management System
-[still in progress....]
+
 A full-stack web application designed to manage music label operations including artists, tracks, albums, and revenue insights. This system provides a centralized admin dashboard with secure authentication and real-time data management.
 
 ---
+
 
 ## 🚀 Features
 
@@ -31,6 +32,8 @@ A full-stack web application designed to manage music label operations including
 
 ---
 
+[still in progress....]
+this project is ready to run over system locally .....Actively working on Deployement part 
 
 ## ⚙️ Installation & Setup
 
