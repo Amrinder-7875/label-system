@@ -31,11 +31,6 @@ A full-stack web application designed to manage music label operations including
 
 ---
 
-## 📁 Project Structure
-
-music-label-management/ │ ├── frontend/         # React frontend │   ├── src/ │   └── public/ │ ├── backend/          # Node + Express backend │   ├── routes/ │   ├── controllers/ │   ├── models/ │   └── config/ │ └── README.md
-
----
 
 ## ⚙️ Installation & Setup
 
