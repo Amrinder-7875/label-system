@@ -1,17 +1,96 @@
-# React + Vite
+# 🎵 Music Label Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application designed to manage music label operations including artists, tracks, albums, and revenue insights. This system provides a centralized admin dashboard with secure authentication and real-time data management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- 🔐 Admin Authentication (JWT-based)
+- 🎤 Artist Management (Add, Update, Delete)
+- 🎶 Release Management
+- 📊 Dashboard with Live Data
+- 🔄 RESTful API Integration
+- 🌐 Fully Responsive UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# label-system
+### Frontend
+- React.js
+- Tailwind CSS
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB (Mongoose)
+
+---
+
+## 📁 Project Structure
+
+music-label-management/ │ ├── frontend/         # React frontend │   ├── src/ │   └── public/ │ ├── backend/          # Node + Express backend │   ├── routes/ │   ├── controllers/ │   ├── models/ │   └── config/ │ └── README.md
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+bash git clone https://github.com/your-username/music-label-management.git cd music-label-management 
+
+---
+
+### 2. Backend Setup
+bash cd backend npm install 
+
+Create a .env file:
+PORT=5000
+MONGO_URI=your_mongodb_connection_string 
+JWT_SECRET=your_secret_key
+
+Run backend:
+bash npm start 
+
+---
+
+### 3. Frontend Setup
+bash cd frontend npm install npm start 
+
+---
+
+
+
+## 📊 Future Improvements
+
+- Role-based access (Admin/User)
+- Music streaming integration
+- Analytics dashboard (charts)
+- File upload (songs, album covers)
+- Payment & royalty tracking
+
+---
+
+## 🧠 Learning Outcomes
+
+- Full-stack development (MERN)
+- REST API design
+- Authentication & authorization
+- Database schema design
+- Debugging real-world issues
+
+---
+
+## 📌 Author
+
+Amrinder Singh  
+Computer Science Student  
+
+---
+
+## 📜 License
+
+This project is for educational purposes
