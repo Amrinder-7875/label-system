@@ -1,6 +1,9 @@
 # 🎵 Music Label Management System
 
 A full-stack web application designed to manage music label operations including artists, tracks, albums, and revenue insights. This system provides a centralized admin dashboard with secure authentication and real-time data management.
+<img width="1710" height="952" alt="Screenshot 2026-05-01 at 2 05 48 PM" src="https://github.com/user-attachments/assets/24723816-3380-4563-b207-7678634f9985" />
+<img width="1709" height="949" alt="Screenshot 2026-05-01 at 2 07 50 PM" src="https://github.com/user-attachments/assets/1f49cd7c-1dcc-44f4-b024-3621fa0ad5e4" />
+
 
 ---
 
